@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+    <head>
+      <html lang="en">
+      <meta charset="utf-8">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    
+      <link rel="icon" type="image/png" sizes="32x32" href="images/Poké_Ball_icon.svg.png">
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      
+      <!-- Fonts Google -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+      <link rel="stylesheet" href="css/styles.css">             
+      <title>PokeMiu</title>
+    </head>
+    <body>
+      <div class="top row">
+        <div class="col-6" style="z-index: 999;">
+          <h1 id="title-left">
+          <img src="css/img/koraidon-ico.png" style="height: 90px; width: 90px; transform: scaleX(-1);">
+          <img src="css/img/miraidon-ico.png" style="height: 90px; width: 90px;">
+           Poke
+           <img src="images/Poké_Ball_icon.svg.png" style="height: 90px; width: 90px; margin-left: -25px; margin-right: -55px;">             
+        </h1></div>
+
+        <div class="col-6">
+          <h1 id="title-right"> Miu
+            <img src="css/img/coco.png" style="height: 80px; width: 80px;">
+            <img src="css/img/pato.png" style="height: 80px; width: 80px;">
+            <img src="css/img/gato.png" style="height: 80px; width: 80px;">
+          </h1>
+        </div>
+        <!-- <div class="faixa-header"><h1>✦ PokeMiu ✦</h1></div> -->
+
+      </div>
+
+        <div class="container-fluid">    
+           
+        <div class="row" id="conteudo">
+            <div class="col-3 menu">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#fraquezaEfetividade" aria-expanded="false" aria-controls="fraquezaEfetividade">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                Fraquezas x Efetividade - por tipo
+              </button>
+            </div>
+            <div class="col-3 menu">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#nivelEvolucao" aria-expanded="false" aria-controls="nivelEvolucao">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                Nível para evoluir  <span>Scarlet e Violet</span>
+              </button>
+            </div>
+            <div class="col-3 menu">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pokemonRaro" aria-expanded="false" aria-controls="pokemonRaro">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                Pokemon Raros <span>Scarlet e Violet</span>
+              </button>
+            </div>
+            <div class="col-3 menu">
+              <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ominousBlack" aria-expanded="false" aria-controls="ominousBlack">
+                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                Localização Ominous Black Stakes <span>Scarlet e Violet</span>
+              </button>
+            </div>
+
+            <div class="collapse" id="fraquezaEfetividade" data-parent="#conteudo">
+            <hr>
+              <table class="table table-hover" id="detalhadoFraqEfev">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Super efetivo contra</th>
+                    <th scope="col">Resistente contra</th>
+                    <th scope="col">Fraco contra</th>
+                    <th scope="col">Imune contra</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-normal.png" style="height: 50px; width: 50px;"></td>
+                    <td>Normal</td>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>Lutador</td>
+                    <td>Fantasma</td>
+                  </tr>          
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-lutador.png" style="height: 50px; width: 50px;"></td>
+                    <td>Lutador</td>
+                    <td>Normal, Pedra, Aço, Gelo e Sombrio</td>
+                    <td>Sombrio, Pedra e Inseto</td>
+                    <td>Voador, Psiquico e Fada</td>
+                    <td>--</td>
+                  </tr>         
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-voador.png" style="height: 50px; width: 50px;"></td>
+                    <td>Voador</td>
+                    <td>Lutador, Inseto e Planta</td>
+                    <td>Planta, Lutador e Inseto</td>
+                    <td>Elétrico, Pedra e Gelo</td>
+                    <td>Terrestre</td>
+                  </tr>     
+                  
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-venenoso.png" style="height: 50px; width: 50px;"></td>
+                    <td>Venenoso</td>
+                    <td>Planta e Fada</td>
+                    <td>Venenoso, Inseto, Fada, Lutador e Planta</td>
+                    <td>Terrestre e Psiquico</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-terra.png" style="height: 50px; width: 50px;"></td>
+                    <td>Terrestre</td>
+                    <td>Venenoso, Pedra, Aço, Fogo e Elétrico</td>
+                    <td>Venenoso e Pedra</td>
+                    <td>Água, Planta e Gelo</td>
+                    <td>Elétrico</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-pedra.png" style="height: 50px; width: 50px;"></td>
+                    <td>Pedra</td>
+                    <td>Voador, Inseto, Fogo e Gelo</td>
+                    <td>Venenoso, Normal, Fogo e Voador</td>
+                    <td>Lutador, Planta, Terrestre, Aço e Água</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-inseto.png" style="height: 50px; width: 50px;"></td>
+                    <td>Inseto</td>
+                    <td>Planta, Psiquico e Sombrio</td>
+                    <td>Lutador, Planta e Terrestre</td>
+                    <td>Fogo, Voador e Pedra</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-fantasma.png" style="height: 50px; width: 50px;"></td>
+                    <td>Fantasma</td>
+                    <td>Fantasma e Psiquico</td>
+                    <td>Venenoso e Inseto</td>
+                    <td>Fantasma e Sombrio</td>
+                    <td>Normal e Lutador</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-metal.png" style="height: 50px; width: 50px;"></td>
+                    <td>Aço</td>
+                    <td>Pedra, Gelo e Fada</td>
+                    <td>Gelo, Normal, Planta, Voador, Pedra, Psiquico, Dragão, Fada, Aço e Inseto</td>
+                    <td>Fogo, Terrestre e Lutador</td>
+                    <td>Venenoso</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-fogo.png" style="height: 50px; width: 50px;"></td>
+                    <td>Fogo</td>
+                    <td>Inseto, Aço, Planta e Gelo</td>
+                    <td>Aço, Fogo, Planta, Gelo, Fada e Inseto</td>
+                    <td>Água, Terrestre e Pedra</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-agua.png" style="height: 50px; width: 50px;"></td>
+                    <td>Água</td>
+                    <td>Terrestre, Pedra e Fogo</td>
+                    <td>Fogo, Água, Gelo e Aço</td>
+                    <td>Planta e Elétrico</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-grama.png" style="height: 50px; width: 50px;"></td>
+                    <td>Grama</td>
+                    <td>Terrestre, Pedra e Água</td>
+                    <td>Água, Planta, Terrestre e Eletríco</td>
+                    <td>Fogo, Voador, Gelo, Venenoso e Inseto</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-eletrico.png" style="height: 50px; width: 50px;"></td>
+                    <td>Elétrico</td>
+                    <td>Voador e Água</td>
+                    <td>Elétrico, Voador e Aço</td>
+                    <td>Terrestre</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-psiquico.png" style="height: 50px; width: 50px;"></td>
+                    <td>Psiquico</td>
+                    <td>Lutador e Venenoso</td>
+                    <td>Psiquico e Lutador</td>
+                    <td>Inseto, Fantasma e Sombrio</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-gelo.png" style="height: 50px; width: 50px;"></td>
+                    <td>Gelo</td>
+                    <td>Voador, Terrestre, Planta e Dragão</td>
+                    <td>Gelo</td>
+                    <td>Fogo, Pedra, Lutador e Aço</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-dragao.png" style="height: 50px; width: 50px;"></td>
+                    <td>Dragão</td>
+                    <td>Dragão</td>
+                    <td>Elétrico, Fogo, Água e Inseto</td>
+                    <td>Gelo, Dragão e Fada</td>
+                    <td>--</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-fada.png" style="height: 50px; width: 50px;"></td>
+                    <td>Fada</td>
+                    <td>Lutador, Dragão, Sombrio</td>
+                    <td>Sombrio, Lutador e Inseto</td>
+                    <td>Venenoso e Aço</td>
+                    <td>Dragão</td>
+                  </tr> 
+
+                  <tr>
+                    <td><img src="tipos-pokemons-icones/tipo-sombrio.png" style="height: 50px; width: 50px;"></td>
+                    <td>Sombrio</td>
+                    <td>Fantasma e Psiquico</td>
+                    <td>Sombrio e Fantasma</td>
+                    <td>Lutador, Inseto e Fada</td>
+                    <td>Psiquico</td>
+                  </tr> 
+                  </tbody>
+              </table>
+            </div>
+            
+            <div class="collapse" id="nivelEvolucao" data-parent="#conteudo">
+              <hr>
+              <table class="table table-hover" id="detalhadoNivEvol">
+                <thead>
+                  <tr>
+                    <th scope="col">Pokemon</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Como evoluir?</th>
+                    <th scope="col">Evolução</th>
+                    <th scope="col">Nome</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1010_00_00_00_big_Sprigatito-150x150.png.webp">
+                    </td>
+                    <td>Sprigatito</td>
+                    <td>Chegar no level 16</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1011_00_00_00_big_Floragato-150x150.png.webp">
+                    </td>
+                    <td>Floragato</td>
+                  </tr>    
+
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1011_00_00_00_big_Floragato-150x150.png.webp">
+                    </td>
+                    <td>Floragato	</td>
+                    <td>Chegar no level 36</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1012_00_00_00_big_Meowscarada-150x150.png.webp">
+                      </td>
+                      <td>Meowscarada</td>
+                  </tr>          
+
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1013_00_00_00_big_Fuecoco-150x150.png.webp">
+                    </td>
+                    <td>Fuecoco</td>
+                    <td>Chegar no level 16</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1014_00_00_00_big_Crocalor-150x150.png.webp">
+                    </td>
+                    <td>Crocalor</td>
+                  </tr>          
+                      
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1014_00_00_00_big_Crocalor-150x150.png.webp">
+                    </td>
+                    <td>Crocalor</td>
+                    <td>Chegar no level 36</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1015_00_00_00_big_Skeledirge-150x150.png.webp">
+                    </td>
+                  <td>Skeledirge</td>
+                  </tr>          
+      
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1016_00_00_00_big_Quaxly-150x150.png.webp">
+                      </td>
+                      <td>Quaxly</td>
+                      <td>Chegar no level 16</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1017_00_00_00_big_Quaxwell-150x150.png.webp">
+                      </td>
+                      <td>Quaxwell</td>
+                  </tr>          
+                  
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1017_00_00_00_big_Quaxwell-150x150.png.webp">
+                    </td>
+                    <td>Quaxwell</td>
+                    <td>Chegar no level 36</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1018_00_00_00_big_Quaquaval-150x150.png.webp">
+                    </td>
+                    <td>Quaquaval</td>
+                  </tr>          
+                    
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1019_00_00_00_big_Lechonk-150x150.png.webp">
+                      </td>
+                      <td>Lechonk</td>
+                      <td>Chegar no level 18 + gênero macho</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1020_00_00_00_big-Oinkologne_Male-150x150.png.webp">
+                      </td>
+                      <td>Oinkologne Macho</td>
+                  </tr>         
+            
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1019_00_00_00_big_Lechonk-150x150.png.webp">
+                      </td>
+                      <td>Lechonk</td>
+                      <td>Chegar no level 18 + gênero fêmea</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1020_01_00_00_big_Oinkologne_Female-150x150.png.webp">
+                      </td>
+                      <td>Oinkologne Fêmea</td>
+                  </tr>          
+            
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm0206_00_00_00_big_Dunsparce-150x150.png.webp">
+                      </td>
+                      <td>Dunsparce</td>
+                      <td>Subir de level depois que aprender e equipar o golpe Hyper Drill</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1021_11_00_00_big_Dudunsparce-150x150.png.webp">
+                      </td>
+                      <td>Dudunsparce</td>
+                  </tr>          
+              
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1022_00_00_00_big_Tarountula-150x150.png.webp">
+                      </td>
+                      <td>Tarountula</td>
+                      <td>Chegar no level 15</td>
+                      <td>
+                          <img src="images/base-scarlet-violet/pm1023_00_00_00_big_Spidops-150x150.png.webp">
+                      </td>
+                      <td>Spidops</td>
+                  </tr>          
+                                
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1024_00_00_00_big_Nymble-150x150.png.webp">
+                      </td>
+                      <td>Nymble</td>
+                      <td>Chegar no level 24</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1025_00_00_00_big_Lokix-150x150.png.webp">
+                      </td>
+                      <td>Lokix</td>
+                  </tr>                        
+                  
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1026_00_00_00_big_Rellor-150x150.png.webp">
+                      </td>
+                      <td>Rellor</td>
+                      <td>Subir de level Andar 1000 passos fora da Poké Bola no modo Let’s GO em uma área barrenta</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1027_00_00_00_big_Rabsca-150x150.png.webp">
+                      </td>
+                      <td>Rabsca</td>
+                  </tr>          
+
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1028_00_00_00_big_Greavard-150x150.png.webp">
+                      </td>
+                      <td>Greavard</td>
+                      <td>Chegar no level 30 à noite</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1029_00_00_00_big_Houndstone-150x150.png.webp">
+                      </td>
+                      <td>Houndstone</td>
+                  </tr>          
+                                      
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1030_00_00_00_big_Flittle-150x150.png.webp">
+                      </td>
+                      <td>Flittle</td>
+                      <td>Chegar no level 35</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1031_00_00_00_big_Espathra-150x150.png.webp">
+                      </td>
+                      <td>Espathra</td>
+                  </tr>          
+                        
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm0203_00_00_00_big_Girafarig-150x150.png.webp">
+                      </td>
+                      <td>Girafarig</td>
+                      <td>Subir de level enquanto o golpe Twin Beam estiver em seu moveset</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1032_00_00_00_big_Farigiraf-150x150.png.webp">
+                      </td>
+                      <td>Farigiraf</td>
+                  </tr>          
+              
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1033_00_00_00_big_Wiglett-150x150.png.webp">
+                      </td>
+                      <td>Wiglett</td>
+                      <td>Chegar no level 26</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1034_00_00_00_big_Wugtrio-150x150.png.webp">
+                      </td>
+                      <td>Wugtrio</td>
+                  </tr>          
+                      
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1037_00_00_00_big_Finizen-150x150.png.webp">
+                      </td>
+                      <td>Finizen</td>
+                      <td>Subir de level após batalhar enquanto estiver no modo multiplayer (com outros jogadores) usando a função Union Circle</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1038_11_00_00_big_Palafin-150x150.png.webp">
+                      </td>
+                      <td>Palafin</td>
+                  </tr>          
+                      
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1039_00_00_00_big_Smoliv-150x150.png.webp">
+                      </td>
+                      <td>Smoliv</td>
+                      <td>Chegar no level 25</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1040_00_00_00_big_Dolliv-150x150.png.webp">
+                      </td>
+                      <td>Dolliv</td>
+                  </tr>          
+                      
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1040_00_00_00_big_Dolliv-150x150.png.webp">
+                      </td>        
+                      <td>Dolliv</td>
+                      <td>Chegar no level 35</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1041_00_00_00_big_Arboliva-150x150.png.webp">
+                      </td>
+                      <td>Arboliva</td>
+                  </tr>          
+                      
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1042_00_00_00_big_Capsakid-150x150.png.webp">
+                      </td>
+                      <td>Capsakid</td>
+                      <td>Usar uma Fire Stone</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1043_00_00_00_big_Scovillain-150x150.png.webp">
+                      </td>
+                      <td>Scovillain</td>
+                  </tr>
+                      
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1044_00_00_00_big_Tadbulb-150x150.png.webp">
+                      </td>
+                      <td>Tadbulb</td>
+                      <td>Usar uma Thunder Stone</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1045_00_00_00_big_Bellibolt-150x150.png (1).webp">
+                      </td>
+                      <td>Bellibolt</td>
+                  </tr>          
+                
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1046_00_00_00_big_Varoom-150x150.png.webp">
+                      </td>
+                      <td>Varoom</td>
+                      <td>Chegar no level 40</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1047_00_00_00_big_Revavroom-150x150.png.webp">
+                      </td>
+                      <td>Revavroom</td>
+                  </tr>          
+            
+                  <tr>  
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1049_00_00_00_big_Tandemaus-150x150.png.webp">
+                      </td>
+                      <td>Tandemaus</td>
+                      <td>Chegar no level 25 (1/26 chance de conseguir um com apenas um filhote)</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1050_12_00_00_big_Maushold-150x150.png.webp">
+                      </td>
+                      <td>Maushold</td>
+                  </tr>          
+      
+                  <tr>  
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1051_00_00_00_big_Cetoddle-150x150.png.webp">
+                      </td>
+                      <td>Cetoddle</td>
+                      <td>Usar uma Ice Stone</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1052_00_00_00_big_Cetitan-150x150.png.webp">
+                      </td>
+                      <td>Cetitan</td>
+                  </tr>          
+                  
+                  <tr>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1053_00_00_00_big_Frigibax-150x150.png.webp">
+                      </td>
+                      <td>Frigibax</td>
+                      <td>Chegar no level 35</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1054_00_00_00_big_Arctibax-150x150.png.webp">
+                      </td>
+                      <td>Arctibax</td>
+                  </tr>
+
+                  <tr>  
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1054_00_00_00_big_Arctibax-150x150.png.webp">
+                      </td>
+                      <td>Arctibax</td>
+                      <td>Chegar no level 54</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1055_00_00_00_big_Baxcalibur-150x150.png.webp">
+                      </td>
+                            <td>Baxcalibur</td>
+                  </tr>   
+              
+                  <tr>  
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1058_00_00_00_big_Pawmi-150x150.png.webp">
+                      </td>
+                      <td>Pawmi</td>
+                      <td>Chegar no level 18</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1059_00_00_00_big_Pawmo-150x150.png.webp">
+                      </td>
+                      <td>Pawmo</td>
+                  </tr>          
+                  
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1059_00_00_00_big_Pawmo-150x150.png.webp">
+                    </td>
+                    <td>Pawmo</td>
+                    <td>Subir de level após andar 1000 passos fora da Poké Bola no modo Let’s GO</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1060_00_00_00_big_Pawmot-150x150.png.webp">
+                    </td>
+                    <td>Pawmot</td>
+                  </tr>          
+                  
+                  <tr>  
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1061_00_00_00_big_Wattrel-150x150.png.webp">
+                    </td>
+                    <td>Wattrel</td>
+                    <td>Chegar no level 25</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1062_00_00_00_big_Kilowattrel-150x150.png.webp">
+                    </td>
+                    <td>Kilowattrel</td>
+                  </tr>          
+                  
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1067_00_00_00_big_Nacli-150x150.png.webp">
+                    </td>
+                    <td>Nacli</td>
+                    <td>Chegar no level 24</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1068_00_00_00_big_Naclstack-150x150.png.webp">
+                    </td>
+                    <td>Naclstack</td>
+                  </tr>          
+                  
+                  <tr>  
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1068_00_00_00_big_Naclstack-150x150.png.webp">
+                    </td>
+                    <td>Naclstack</td>
+                    <td>Chegar no level 38</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1069_00_00_00_big_Garganacl-150x150.png.webp">
+                    </td>
+                    <td>Garganacl</td>
+                  </tr>          
+                      
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1070_00_00_00_big_Glimmet-150x150.png.webp">
+                    </td>
+                    <td>Glimmet</td>
+                    <td>Chegar no level 35</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1071_00_00_00_big_Glimmora-150x150.png.webp">
+                    </td>
+                    <td>Glra</td>
+                  </tr>          
+                    
+                  <tr>
+                      <td>
+                      <img src="images/base-scarlet-violet/pm1072_00_00_00_big_Shroodle-150x150.png.webp">
+                      </td>
+                      <td>Shroodle</td>
+                      <td>Chegar no level 28</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1073_00_00_00_big_Grafaiai-150x150.png.webp">
+                      </td>
+                      <td>Grafaiai</td>
+                  </tr>          
+                        
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1074_00_00_00_big_Fidough-150x150.png.webp">
+                      </td>
+                    <td>Fidough</td>
+                    <td>Chegar no level 26</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1075_00_00_00_big_Dachsbun-150x150.png.webp">
+                    </td>
+                    <td>Dachsbun</td>
+                  </tr>          
+                          
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1076_00_00_00_big_Maschiff-150x150.png.webp">
+                    </td>
+                    <td>Maschiff</td>
+                    <td>Chegar no level 30</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1077_00_00_00_big_Mabosstiff-150x150.png.webp">                     
+                    </td>
+                  <td>Mabosstiff</td>
+                  </tr>          
+                          
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1078_00_00_00_big_Bramblin-150x150.png.webp">
+                    </td>
+                    <td>Bramblin</td>
+                    <td>Subir de level após andar 1000 passos fora da Poké Bola no modo Let’s GO</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1079_00_00_00_big_Brambleghast-150x150.png.webp">
+                    </td>
+                    <td>Brambleghast</td>
+                  </tr>          
+                  
+                  <tr>  
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1080_11_00_00_big_Gimmighoul_Chest-150x150.png.webp">
+                    </td>
+                    <td>Gimmighoul</td>
+                    <td>Subir de level após obter 999 moedas de Gimmighoul</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1081_00_00_00_big_Gholdengo-150x150.png.webp">
+                    </td>
+                    <td>Gholdengo</td>
+                  </tr>          
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1104_00_00_00_big_Tinkatink-150x150.png.webp">
+                    </td>
+                    <td>Tinkatink</td>
+                    <td>Chegar no level 24</td>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1105_00_00_00_big_Tinkatuff-150x150.png.webp">
+                    </td>
+                    <td>Tinkatuff</td>
+                  </tr>          
+                        
+                  <tr>  
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1104_00_00_00_big_Tinkatink-150x150.png.webp">
+                    </td>
+                      <td>Tinkatink</td>
+                    <td>Chegar no level 38</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1105_00_00_00_big_Tinkatuff-150x150.png.webp">
+                      </td>
+                      <td>Tinkatuff</td>
+                  </tr>          
+                
+                  <tr>
+                      <td>
+                      <img src="images/base-scarlet-violet/pm1107_00_00_00_big_Charcadet-150x150.png.webp">
+                    </td>
+                    <td>Charcadet</td>
+                    <td>Use o item Auspicious Armor.
+                      Para conseguir esse item, converse com o homem em Zapapico após conseguir 10 Bronzor fragments. Exclusivo de Pokémon Scarlet</td>
+                      <td>
+                        <img src="images/base-scarlet-violet/pm1108_00_00_00_big_Armarouge-150x150.png.webp">
+                      </td>
+                      <td>Armarouge</td>
+                  </tr>          
+                  
+                  <tr>
+                    <td>
+                      <img src="images/base-scarlet-violet/pm1107_00_00_00_big_Charcadet-150x150.png.webp">
+                    </td>
+                    <td>Charcadet</td>
+                    <td>Use o item Malicious Armor.
+                      Para conseguir esse item, converse com o mulher em Zapapico após conseguir 10 Sinistea Chips. Exclusivo de Pokémon Violet</td>
+                    <td>
+                        <img src="images/base-scarlet-violet/pm1109_00_00_00_big_Ceruledge-150x150.png.webp">
+                      </td>
+                      <td>Ceruledge</td>
+                  </tr> 
+
+                  <tr>
+                  <td>
+                    <img src="images/base-scarlet-violet/pm1110_00_00_00_big_Toedscool-150x150.png.webp">
+                  </td>
+                  <td>Toedscool</td>
+                  <td>Chegar no level 30</td>
+                  <td>
+                    <img src="images/base-scarlet-violet/pm1111_00_00_00_big_Toedscruel-150x150.png.webp">
+                  </td>
+                    <td>Toedscruel</td>
+                  </tr>          
+                <tr>
+                  <td>
+                    <img src="images/base-scarlet-violet/pm0625_00_00_00_big_Bisharp-150x150.png.webp">
+                  </td>
+                  <td>Bisharp</td>
+                  <td>Subir de level enquanto estiver segurando o item Leader’s Crest após derrotar outros 3 Bisharp</td>
+                  <td>
+                    <img src="images/base-scarlet-violet/pm1112_00_00_00_big_Kingambit-150x150.png.webp">
+                  </td>
+                  <td>Kingambit</td>
+                </tr>          
+                <tr> 
+                  <td>
+                    <img src="images/base-scarlet-violet/Wooper-Paldea-150x150.png.webp">
+                  </td>
+                  <td>Wooper</td>
+                  <td>Chegar ao level 20</td>
+                  <td>
+                    <img src="images/base-scarlet-violet/pm1113_00_51_00_big_Clodsire-150x150.png.webp">
+                  </td>
+                  <td>Clodsire</td>
+                </tr>   
+                <tr> 
+                  <td>
+                    <img src="images/base-scarlet-violet/pm0057_00_00_00_big_Primeape-150x150.png.webp">
+                  </td>
+                  <td>Primeape</td>
+                  <td>Subir de level após usar o golpe Rage Fist 20 vezes</td>
+                  <td>
+                    <img src="images/base-scarlet-violet/pm1114_00_00_00_big_Annihilape-150x150.png.webp">
+                  </td>
+                  <td>Annihilape</td>
+                </tr>                                                                       
+              </tbody>
+            </table>
+          </div>  
+
+          <div class="collapse" id="pokemonRaro" data-parent="#conteudo">
+            <hr>
+            <div class="accordion" id="pokeRaros">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <div class="row">
+                      <div class="col-10">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Koraidon
+                        </button>
+                      </div>
+                      <div class="col-2">
+                        <img src="images/base-scarlet-violet/Koraidon.webp" style="height: 90px; width: 90px; transform: scaleX(-1);">
+                      </div>
+                    </div>
+                  </h5>
+                </div>
+            
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#pokeRaros">
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- <div class="col-sm">
+                        <img src="images/base-scarlet-violet/Koraidon.webp" style="height: 300px; width: 300px;">
+                      </div> -->
+                      <div class="col-sm">
+                        <p>Koraidon é um Pokémon Lendário Lutador e Dragão, comumente associado a Pokémon Escarlate. Aqueles familiarizados com a série saberão que esses Pokémon de nível de jogo final são incrivelmente poderosos e difíceis de derrotar, com uma chance limitada de adicioná-los ao Pokédex.
+                        <br>  No entanto, Koraidon é um pouco diferente com o Pokémon se juntando ao jogador desde o início. Existe a opção de adicionar uma variação do modo de batalha do personagem ao time de um jogador depois de usá-lo como companheiro de viagem, mas o que é mais complexo é que também existe uma rara oportunidade de capturar um clone do Legendary, um paralelo de tipos para negociar ou manter.
+                        </p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <div class="row">
+                      <div class="col-10">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Miraidon
+                        </button>
+                      </div>
+                      <div class="col-2">
+                        <img src="images/base-scarlet-violet/Miraidon.webp" style="height: 90px; width: 90px;">
+                      </div>
+                    </div>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#pokeRaros">
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- <div class="col-sm">
+                        <img src="images/base-scarlet-violet/Miraidon.webp" style="height: 300px; width: 300px; transform: scaleX(-1);">
+                      </div> -->
+                      <div class="col-sm">
+                        <p>
+                          Um Pokémon do tipo Elétrico e do tipo Dragão, Miraidon é o tipo de personagem que os fãs provavelmente vão querer ver retornar no futuro, por causa de seu lindo design visual e importância para a história. Outro Pokémon Lendário, é o mascote de Tolet e se junta aos jogadores em suas viagens.
+                          Tudo sobre Miraidon espelha as mesmas técnicas de Koraidon, com o jogador aproveitando a oportunidade por um tempo limitado para mover o personagem para seu grupo de batalha e obtendo a rara oportunidade de capturar uma iteração paralela, que é um segredo fortemente guardado.
+                          No entanto, Koraidon é um pouco diferente com o Pokémon se juntando ao jogador desde o início. Existe a opção de adicionar uma variação do modo de batalha do personagem ao time de um jogador depois de usá-lo como companheiro de viagem, mas o que é mais complexo é que também existe uma rara oportunidade de capturar um clone do Legendary, um paralelo de tipos para negociar ou manter.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <div class="row">
+                      <div class="col-10">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Wo-Chien
+                        </button>
+                      </div>
+                      <div class="col-2">
+                        <img src="images/base-scarlet-violet/Menu_SV_Wo-Chien.png" style="height: 90px; width: 90px;">
+                      </div>
+                    </div> 
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#pokeRaros">
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- <div class="col-sm">
+                        <img src="images/base-scarlet-violet/Menu_SV_Wo-Chien.png" style="height: 300px; width: 300px; transform: scaleX(-1);">
+                      </div> -->
+                      <div class="col-sm">
+                        <p>
+                          Um Pokémon do tipo Dark e Grass que também se enquadra na categoria Legendary, do ponto de vista do design, Wo-Chien é um personagem único e de aparência rara, refletindo um caracol antigo que talvez se sinta mais em casa escondido na grama alta. O processo de captura não é fácil.
+                          Os jogadores devem coletar 8 estacas azuis diferentes para revelar um santuário que os ajudará a identificar esse ser incrível. O santuário em si é difícil de encontrar e capturar o personagem será um desafio. Longe de ser bonitinho, o personagem certamente será um dos mais procurados, principalmente para quem procura os achados mais raros.  
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <div class="row">
+                      <div class="col-10">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Chien-Pao
+                        </button>
+                      </div>
+                      <div class="col-2">
+                        <img src="images/base-scarlet-violet/Menu_SV_Chien-Pao.png" style="height: 90px; width: 90px;">
+                      </div>
+                    </div> 
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#pokeRaros">
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- <div class="col-sm">
+                        <img src="images/base-scarlet-violet/Menu_SV_Chien-Pao.png" style="height: 300px; width: 300px; transform: scaleX(-1);">
+                      </div> -->
+                      <div class="col-sm">
+                        <p>
+                          O Pokémon do tipo Dark and Ice é outra figura misteriosa que os jogadores vão querer adicionar ao seu time. O personagem é um dos muitos Pokémon raros que são um pouco mais difíceis de encontrar, com as características felinas certamente se destacando e entrando no folclore e na mitologia da série.
+                          Assim como capturar Wo-Chien, capturar Chien-Pao representa um desafio semelhante envolvendo 8 estacas azuis diferentes, que quando coletadas revelarão o santuário. Pode ser um longo processo para se familiarizar, mas as recompensas de potencialmente adicionar o lendário ao Pokédex valem a pena.                    
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h5 class="mb-0">
+                    <div class="row">
+                      <div class="col-10">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          Ting-Lu
+                        </button>
+                      </div>
+                      <div class="col-2">
+                        <img src="images/base-scarlet-violet/Menu_SV_Ting-Lu.png" style="height: 90px; width: 90px;">
+                      </div>
+                    </div> 
+                  </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#pokeRaros">
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- <div class="col-sm">
+                        <img src="images/base-scarlet-violet/Menu_SV_Ting-Lu.png" style="height: 300px; width: 300px; transform: scaleX(-1);">
+                      </div> -->
+                      <div class="col-sm">
+                        <p>
+                          As semelhanças na configuração continuam com Ting-Lu, que é outro personagem incrivelmente intrigante que acrescenta muito à tradição do universo. O personagem é um tipo Dark e um tipo Ground, que é uma ótima combinação, além de um Legendary na Pokédex. Visualmente, parece um pouco com um cervo rochoso.
+                          Com uma espécie de recipiente na cabeça, Ting-Lu é uma figura de aparência incomum. Assim como seus antecessores da lista, ele pode ser encontrado em um santuário após coletar essas estacas misteriosas. Os iniciantes devem saber que devem seguir esta lenda se quiserem adicionar um poderoso Pokémon às suas fileiras.                           
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <div class="row">
+                      <div class="col-10">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          Chi Yu
+                        </button>
+                      </div>
+                      <div class="col-2">
+                        <img src="images/base-scarlet-violet/Menu_SV_Chi-Yu.png" style="height: 90px; width: 90px;">
+                      </div>
+                    </div> 
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#pokeRaros">
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- <div class="col-sm">
+                        <img src="images/base-scarlet-violet/Menu_SV_Chi-Yu.png" style="height: 300px; width: 300px; transform: scaleX(-1);">
+                      </div> -->
+                      <div class="col-sm">
+                        <p>
+                          A região de Paldea oferece muitos Pokémon lendários diferentes para coletar e Chi-Yu está entre os mais fortes. Como uma combinação de Dark e Fire, há um potencial ilimitado de como os jogadores podem usar o personagem se Chi-Yu for adicionado ao time.             
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <h5 class="mb-0">
+                    <div class="row">
+                      <div class="col-10">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          Ditto
+                        </button>
+                      </div>
+                      <div class="col-2">
+                        <img src="images/base-scarlet-violet/132Ditto.png" style="height: 90px; width: 90px;">
+                      </div>
+                    </div> 
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#pokeRaros">
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- <div class="col-sm">
+                        <img src="images/base-scarlet-violet/132Ditto.png" style="height: 300px; width: 300px; transform: scaleX(-1);">
+                      </div> -->
+                      <div class="col-sm">
+                        <p>
+                          Ditto sempre foi uma figura difícil e rara em qualquer Pokémon título por causa de suas habilidades de mudança de forma. O personagem não aparece com frequência, com o tipo Normal representando um desafio desde sua primeira aparição. Escarlate e Violeta esconder Ditto à vista de todos mais uma vez.
+                          Ditto aparecerá aleatoriamente, assim como em outros títulos. É sempre uma surpresa quando o Pokémon se revela e a única dica sobre como realmente encontrá-lo é continuar a capturar o máximo possível de Pokémon de nível inferior, com o mesmo provavelmente escondido entre eles. É tudo uma questão de sorte.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingEight">
+                  <h5 class="mb-0">
+                    <div class="row">
+                      <div class="col-10">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                          Zorua
+                        </button>
+                      </div>
+                      <div class="col-2">
+                        <img src="images/base-scarlet-violet/500px-570Zorua.png" style="height: 90px; width: 90px;">
+                      </div>
+                    </div> 
+                  </h5>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#pokeRaros">
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- <div class="col-sm">
+                        <img src="images/base-scarlet-violet/500px-570Zorua.png" style="height: 300px; width: 300px; transform: scaleX(-1);">
+                      </div> -->
+                      <div class="col-sm">
+                        <p>
+                          Os Zorua são encontrados na Província do Norte (Área Um) e na Província Oeste (Área Três). Conseguimos pegar vários Zorua em rápida sucessão nos arredores de Medali, por isso recomendamos ir até lá para encontrar um Zorua.
+                          Existem algumas maneiras de identificar um Zorua.
+                          Uma delas é que você pode enfrentar um Pokémon selvagem em uma batalha. Se o seu Pokémon inimigo for um Zorua, ele se transformará assim que a batalha começar, para que você possa fugir imediatamente se o inimigo escolhido não for um Zorua.
+                          No entanto, há também uma maneira mais rápida. Pressione o botão 'ZL' e use o manípulo direito para "travar" um Pokémon na natureza. Dessa forma, você pode ver os nomes dos Pokémon antes de encontrá-los (se já os encontrou antes).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>                      
+        </div>
+
+        <div class="collapse" id="ominousBlack" data-parent="#conteudo">
+          <hr>
+          <table class="table table-hover" id="detalhadoFraqEfev">
+            <thead>
+              <tr>
+                <th scope="col">Cor</th>
+                <th scope="col">Localização</th>
+                <th scope="col">Santuário</th>
+                <th scope="col">Lendário</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="ominous-verde">Verde</td>
+                <td>Noroeste Paldea</td>
+                <td>Santuário Groundblight</td>
+                <td>Ting-Lu</td>
+              </tr>
+
+              <tr>
+                <td id="ominous-azul">Azul</td>
+                <td>Nordeste Paldea</td>
+                <td>Santuário Firescourge</td>
+                <td>Chi-Yu</td>
+              </tr>  
+
+              <tr>
+                <td id="ominous-amarelo">Amarelo</td>
+                <td>Sudoeste Paldea</td>
+                <td>Santuário Icerend</td>
+                <td>Chien-Pao</td>
+              </tr>  
+
+              <tr>
+                <td id="ominous-roxo">Roxo</td>
+                <td>Sudeste Paldea</td>
+                <td>Santuário Grasswither</td>
+                <td>Wo-Chien</td>
+              </tr>  
+              </tbody>
+          </table>
+          <hr>
+          <div style="text-align: center;">
+            <img src="images/base-scarlet-violet/Stakes-Location-Map.png" style="height: 90%; width: 90%;">
+          </div>
+
+          </div>      
+        </div> <!-- fecha div id="conteudo"> -->
+      </div>
+      
+  <footer>
+    <hr>
+    <div style="text-align: center; background-color: #393d3f;">
+      <img src="pokemon-lendarios-scarlet-violet.jpeg" style="filter: grayscale(50%); max-width: 900px;">
+    </div>
+      <hr>
+      <div class="miu-digital">
+        Feito com <span style="font-size: 12px;">♥</span> por 
+        <a href="https://miudigital.com.br/" target="_blank" rel="noopener">Line e Migs Sineiro</a>
+      </div>
+    </footer>    
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>
