@@ -12,7 +12,7 @@
 #title-right {
     background-color: #b64e3e;
     text-align: left;
-    padding: 30px 0px 30px 50px;
+    padding: 28px 0px 30px 50px;
     margin-left: -15px;
         /* background: url(img/fundo-scarlet-violet.png); */
 
@@ -29,10 +29,6 @@
     color: white;
     text-align: center;
     padding: 10px 0 0px 0;
-}
-
-.container-fluid {
-    border: ridge 2px #6c757d;
 }
 
 .menu {
@@ -79,10 +75,17 @@ tbody, thead {
 
 .card-header {
     background-color: #b64e3e !important;
+    border-bottom: 1px solid #fff;
 }
 
 .card-header button {
     color: #fff !important;
+}
+
+.card-body {
+    padding: 20px 30px 20px 30px;
+    text-align: justify;
+    background-color: #754085;
 }
 
 thead {
@@ -122,10 +125,26 @@ label {
 }
 
 span {
-    font-size: 16px;
+    font-size: 12px;
     color: #eaeaea;
     letter-spacing: 0px;
     font-weight: bold;
+}
+
+.scarlet-violet {
+    background-color: #754085;
+    padding: 2px 5px 2px 5px;
+    border-radius: 20px;
+}
+
+.geral {
+    background-color: #ff1b1c;
+    padding: 2px 5px 2px 5px;
+    border-radius: 20px;
+}
+
+.mostra-dados {
+    padding: 0 100px 0 100px;
 }
 
 #utilidades {
@@ -181,6 +200,7 @@ hr {
 .btn-check:focus+.btn-primary, .btn-primary:focus {
     background-color: #393d3f;
     border-color: #393d3f;
+    box-shadow: unset;
 }
 
 .link {
@@ -212,6 +232,7 @@ hr {
 
 .miu-digital span {
     color: #b64e3e;
+    background-color: transparent;
 }
 
 .btn-check:active+.btn-primary, 

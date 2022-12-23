@@ -27,7 +27,9 @@
           <img src="css/img/koraidon-ico.png" style="height: 80px; width: 80px; transform: scaleX(-1);">
           <img src="css/img/miraidon-ico.png" style="height: 80px; width: 80px;">
            Poke
-           <img src="css/img/pokebola.png" style="height: 80px; width: 80px; margin-left: -25px; margin-right: -55px;">             
+           <a href="https://allinesineiro.github.io/pokemiu/">
+            <img src="css/img/pokebola.png" style="height: 80px; width: 80px; margin-left: -25px; margin-right: -55px;">
+           </a>                        
         </h1></div>
 
         <div class="col-6">
@@ -46,30 +48,29 @@
         <div class="row" id="conteudo">
             <div class="col-3 menu">
               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#fraquezaEfetividade" aria-expanded="false" aria-controls="fraquezaEfetividade">
-                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                Fraquezas x Efetividade - por tipo
+                ✦ Fraquezas x Efetividade<br><span class="geral">Geral</span>
               </button>
             </div>
             <div class="col-3 menu">
               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#nivelEvolucao" aria-expanded="false" aria-controls="nivelEvolucao">
-                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                Nível para evoluir  <span>Scarlet e Violet</span>
+                ✦ Nível para evoluir
+                <br><span class="scarlet-violet">Scarlet e Violet</span>
               </button>
             </div>
             <div class="col-3 menu">
               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pokemonRaro" aria-expanded="false" aria-controls="pokemonRaro">
-                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                Pokemon Raros <span>Scarlet e Violet</span>
+                ✦ Encontrar Pokemon Raros
+                <br><span class="scarlet-violet">Scarlet e Violet</span>
               </button>
             </div>
             <div class="col-3 menu">
               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#ominousBlack" aria-expanded="false" aria-controls="ominousBlack">
-                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
-                Localização Ominous Black Stakes <span>Scarlet e Violet</span>
+                ✦ Ominous Black Stakes local
+                <br><span class="scarlet-violet">Scarlet e Violet</span>
               </button>
             </div>
 
-            <div class="collapse" id="fraquezaEfetividade" data-parent="#conteudo">
+            <div class="collapse mostra-dados" id="fraquezaEfetividade" data-parent="#conteudo">
             <hr>
               <table class="table table-hover" id="detalhadoFraqEfev">
                 <thead>
@@ -246,7 +247,7 @@
               </table>
             </div>
             
-            <div class="collapse" id="nivelEvolucao" data-parent="#conteudo">
+            <div class="collapse mostra-dados" id="nivelEvolucao" data-parent="#conteudo">
               <hr>
               <table class="table table-hover" id="detalhadoNivEvol">
                 <thead>
@@ -800,7 +801,7 @@
             </table>
           </div>  
 
-          <div class="collapse" id="pokemonRaro" data-parent="#conteudo">
+          <div class="collapse mostra-dados" id="pokemonRaro" data-parent="#conteudo">
             <hr>
             <div class="accordion" id="pokeRaros">
               <div class="card">
@@ -1038,7 +1039,7 @@
           <hr>                      
         </div>
 
-        <div class="collapse" id="ominousBlack" data-parent="#conteudo">
+        <div class="collapse mostra-dados" id="ominousBlack" data-parent="#conteudo">
           <hr>
           <table class="table table-hover" id="detalhadoFraqEfev">
             <thead>
