@@ -112,6 +112,15 @@ td > img {
     padding: 5px;
 }
 
+#shiny td > img {
+    background-color: #efefef;
+    height: 110px;
+}
+
+#shiny a {
+    color: #fff;
+}
+
 h1 {
     font-family: PokemonSolid;
     font-size: 55px;
